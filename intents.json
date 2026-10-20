@@ -1,0 +1,180 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": ["hi", "hello", "hey", "good morning", "good evening", "good afternoon", "hello there", "hey there", "namaste", "what's up", "sup"],
+      "responses": [
+        "Hello! 👋 I'm CodeBuddy. How can I help you today?",
+        "Hey there! Ask me about programming, careers or just chat.",
+        "Hi! Nice to meet you. What would you like to talk about?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["bye", "goodbye", "see you", "see you later", "talk to you later", "i am leaving", "good night", "exit", "quit"],
+      "responses": [
+        "Goodbye! Come back anytime. 👋",
+        "See you later! Keep coding!",
+        "Bye! Have a great day."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["thanks", "thank you", "thanks a lot", "thank you so much", "that helped", "great help", "appreciate it"],
+      "responses": [
+        "You're welcome! 😊",
+        "Happy to help!",
+        "Anytime! Ask me anything else."
+      ]
+    },
+    {
+      "tag": "about_bot",
+      "patterns": ["who are you", "what is your name", "what are you", "tell me about yourself", "are you a robot", "are you human", "introduce yourself", "your name"],
+      "responses": [
+        "I'm CodeBuddy, an AI chatbot built with Python, Flask and NLP (TF-IDF + cosine similarity). I can chat about programming, careers and study tips.",
+        "I'm CodeBuddy, a Python-powered chatbot. I understand your message using NLP and pick the best matching answer."
+      ]
+    },
+    {
+      "tag": "help",
+      "patterns": ["help", "what can you do", "how can you help me", "your features", "what can i ask you", "options", "commands"],
+      "responses": [
+        "I can help with: 💻 programming basics (Python, Java, HTML, CSS, JavaScript, React, Git, SQL), 🎯 career and interview tips, 📄 resume advice, 📚 study tips, 🕒 time & date, 🧮 calculations (try 'calculate 12*8'), and 😄 jokes."
+      ]
+    },
+    {
+      "tag": "time",
+      "patterns": ["what time is it", "tell me the time", "current time", "time now", "what is the time"],
+      "responses": ["{time}"],
+      "action": "time"
+    },
+    {
+      "tag": "date",
+      "patterns": ["what is the date", "today's date", "what day is it today", "current date", "which day is today", "tell me today's date"],
+      "responses": ["{date}"],
+      "action": "date"
+    },
+    {
+      "tag": "joke",
+      "patterns": ["tell me a joke", "make me laugh", "say something funny", "joke please", "i want a joke", "another joke", "funny"],
+      "responses": [
+        "Why do programmers prefer dark mode? Because light attracts bugs! 🐛",
+        "There are 10 types of people: those who understand binary and those who don't.",
+        "A SQL query walks into a bar, walks up to two tables and asks: 'Can I join you?'",
+        "Why did the developer go broke? Because he used up all his cache. 💸",
+        "I told my computer I needed a break, and now it won't stop sending me Kit-Kat ads."
+      ]
+    },
+    {
+      "tag": "python",
+      "patterns": ["what is python", "tell me about python", "why learn python", "python programming language", "python basics", "how to start python", "how to learn python", "learn python", "how do i learn python", "python for beginners", "python roadmap"],
+      "responses": [
+        "Python is a beginner-friendly, high-level language used for web development, automation, data science and AI. Start with variables, loops, functions and lists, then build small projects. Great free resources: python.org tutorial and freeCodeCamp."
+      ]
+    },
+    {
+      "tag": "java",
+      "patterns": ["what is java", "tell me about java", "java programming", "why learn java", "java oop concepts", "explain oop"],
+      "responses": [
+        "Java is a popular object-oriented language used for backend systems, Android apps and enterprise software. Focus on the four OOP pillars: encapsulation, inheritance, polymorphism and abstraction, then practice collections and DSA."
+      ]
+    },
+    {
+      "tag": "web_dev",
+      "patterns": ["what is web development", "how to become a web developer", "html css javascript", "learn web development", "frontend vs backend", "what is frontend", "what is backend"],
+      "responses": [
+        "Web development has two sides: frontend (HTML for structure, CSS for style, JavaScript for behaviour, plus React) and backend (server logic, APIs and databases like MySQL). Build a portfolio site first, then a full-stack project."
+      ]
+    },
+    {
+      "tag": "react",
+      "patterns": ["what is react", "learn react", "react basics", "explain react", "react components", "react hooks"],
+      "responses": [
+        "React is a JavaScript library for building user interfaces from reusable components. Learn JSX, props, state and hooks (useState, useEffect), then build a small project such as a to-do app."
+      ]
+    },
+    {
+      "tag": "git",
+      "patterns": ["what is git", "what is github", "git commands", "how to use git", "git vs github", "learn git"],
+      "responses": [
+        "Git tracks changes in your code; GitHub hosts your repositories online. Core commands: git init, git add ., git commit -m \"msg\", git push, git pull, git branch. Push every project to GitHub, recruiters check it."
+      ]
+    },
+    {
+      "tag": "sql",
+      "patterns": ["what is sql", "what is mysql", "learn sql", "database basics", "sql commands", "what is a database"],
+      "responses": [
+        "SQL is the language used to work with relational databases such as MySQL. Key commands: SELECT, INSERT, UPDATE, DELETE, plus JOIN, GROUP BY and WHERE. Practice on sites like SQLZoo or LeetCode's database section."
+      ]
+    },
+    {
+      "tag": "ai_ml",
+      "patterns": ["what is ai", "what is machine learning", "explain artificial intelligence", "how to learn ai", "ai vs ml", "learn machine learning", "what is nlp"],
+      "responses": [
+        "AI is the broad field of making machines act intelligently; machine learning (ML) is a subset where models learn from data; NLP lets computers understand human language. Learn Python, NumPy, pandas and scikit-learn, then try small projects like a spam classifier."
+      ]
+    },
+    {
+      "tag": "dsa",
+      "patterns": ["what is dsa", "data structures and algorithms", "how to learn dsa", "dsa roadmap", "how to prepare for coding interview", "leetcode tips"],
+      "responses": [
+        "DSA roadmap: arrays and strings, then linked lists, stacks and queues, recursion, trees, graphs, sorting/searching, and finally dynamic programming. Solve 2 to 3 problems daily on LeetCode or GeeksforGeeks and revise your mistakes."
+      ]
+    },
+    {
+      "tag": "resume",
+      "patterns": ["resume tips", "how to make a good resume", "ats friendly resume", "what is ats", "how to improve my resume", "resume for freshers", "cv tips"],
+      "responses": [
+        "Resume tips for freshers: keep it to one page, use a simple single-column layout, standard headings (Education, Skills, Projects, Experience), strong action verbs and measurable results. Add GitHub and LinkedIn links, and tailor keywords to each job description for ATS."
+      ]
+    },
+    {
+      "tag": "interview",
+      "patterns": ["interview tips", "how to crack an interview", "how to prepare for interview", "common interview questions", "tell me about yourself interview", "hr interview"],
+      "responses": [
+        "Interview prep: revise your resume projects deeply, practise DSA and core CS (OOP, DBMS, OS, networks), and prepare a 60-second 'tell me about yourself' covering education, skills, projects and goals. Do mock interviews and be honest about what you don't know."
+      ]
+    },
+    {
+      "tag": "projects",
+      "patterns": ["project ideas", "suggest a project", "what projects should i build", "good projects for resume", "mini project ideas", "beginner project"],
+      "responses": [
+        "Good resume projects: a portfolio website, a to-do app with a database, a weather app using an API, an expense tracker, a chatbot, a blog with login, and an e-commerce mini site. Deploy them and add the links to your resume."
+      ]
+    },
+    {
+      "tag": "internship",
+      "patterns": ["how to get an internship", "internship tips", "how to find a job", "entry level job tips", "fresher job tips", "where to apply for jobs"],
+      "responses": [
+        "Apply on LinkedIn, Internshala, Naukri, Wellfound and company career pages. Keep your GitHub active, network on LinkedIn, ask seniors for referrals and apply to many roles. Consistency beats perfection."
+      ]
+    },
+    {
+      "tag": "study_tips",
+      "patterns": ["study tips", "how to study effectively", "how to focus", "i am not able to concentrate", "how to manage time", "how to learn faster", "exam tips"],
+      "responses": [
+        "Study smarter: use the Pomodoro method (25 min focus, 5 min break), plan your day the night before, learn by building projects, revise using active recall, and keep your phone away while studying."
+      ]
+    },
+    {
+      "tag": "motivation",
+      "patterns": ["i am sad", "i feel demotivated", "i feel like giving up", "motivate me", "i am stressed", "i am tired", "i failed", "feeling low"],
+      "responses": [
+        "That's tough, but you're not alone. Take a short break, breathe, and break the problem into a tiny first step. Progress is progress, even if it's small. If you feel overwhelmed for long, please talk to a friend, family member or counsellor. 💙",
+        "Every developer has bad days and failed attempts. What matters is that you keep learning. One small step today is enough."
+      ]
+    },
+    {
+      "tag": "creator",
+      "patterns": ["who made you", "who created you", "who built you", "who is your developer", "who is your creator"],
+      "responses": [
+        "I was built as a Python and Flask project using NLP techniques. You can customise me by editing intents.json!"
+      ]
+    }
+  ],
+  "fallback": [
+    "Sorry, I didn't quite get that. Try asking about Python, Java, web development, resumes, interviews or type 'help'.",
+    "Hmm, I'm not sure about that yet. Type 'help' to see what I can do, or add new answers in intents.json!",
+    "I couldn't understand that. Could you rephrase it?"
+  ]
+}
